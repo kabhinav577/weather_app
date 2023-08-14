@@ -35,6 +35,10 @@ function App() {
 
   return (
     <div className="container">
+      <div className="heading">
+        <img src="logo.svg" alt="" />
+        <h1 className="text">Weather App</h1>
+      </div>
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}

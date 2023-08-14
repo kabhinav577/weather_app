@@ -1,8 +1,37 @@
 .container {
-  max-width: 1080px;
-  margin: 20px auto;
+  max-width: 900px;
+  margin: 10px auto 20px auto;
+}
+
+.heading{
+  margin: 0 auto 10px auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading img {
+  margin-right: 1rem;
+  width: 75px;
+}
+
+.heading .text {
+  font-size: 3rem;
+  text-align: center;
+  color: #422222;
 }
 
 .select {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 568px) {
+  .heading img {
+    width: 50px;
+  }
+  .heading .text{
+    font-size: 1.5rem;
+  }
 }
